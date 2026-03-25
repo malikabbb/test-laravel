@@ -6,7 +6,7 @@ use App\Http\Controllers\MemberController;
 use App\Http\Middleware\EnsureSystemIsUninitialized;
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect()->route('login');
 });
 
 // Admin Initialization
